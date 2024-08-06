@@ -1,0 +1,219 @@
+/* NAVBAR */
+
+.fa-bolt{
+    color: yellow;
+    font-size: 40px;
+}
+
+.lcbolt{
+    font-size: 30px;
+}
+
+.modeldivtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mddv{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+.totalprice_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* auth */
+
+
+.registerpage{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 500px;
+    height: 450px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important; 
+    align-self: center !important;
+ }
+ 
+ .form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 35px;
+ }
+
+ 
+
+ .totalcontent_register{
+    background-image: url(images/register.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .form,input{
+     padding: 8px;
+     border: none;
+     border-radius:5px;
+ }
+ input{
+     width: 300px;
+ }
+ 
+ button{
+     margin: 15px;
+ }
+ 
+ .form,label{
+     font-weight: bold;
+     padding: 10px;
+ }
+
+ .pagetitle{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: top 15px;
+ }
+ 
+ .Loginpage{
+     border: 2px solid white;
+     border-radius: 10px;
+     width: 500px;
+     height: 450px;
+     display: flex !important;
+     flex-direction: column;
+     justify-content: center !important; 
+     align-self: center !important;
+ }
+ 
+ .totallogincontent{
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     background-image: url(images/login.jpg); 
+     background-size: cover; 
+     background-repeat: no-repeat;
+     height: 639px;
+     width: 100%;
+ }
+
+ ._register{
+    background-image: url(images/thunderregister.jpeg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .forgotpassword{
+     border: 2px solid white;
+     border-radius: 10px;
+     width: 500px;
+     height: 450px;
+ 
+ }
+ 
+ .resetpassword{
+     border: 2px solid white;
+     border-radius: 10px;
+     width: 500px;
+     height: 450px;
+ }
+ .forget{
+     margin-top: 100px;
+ }
+ 
+ .totalforgotpassword{
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     background-image: url(images/forgotpassword.jpg); 
+     background-size: cover; 
+     background-repeat: no-repeat;
+     height: 639px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .totalreset{
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     background-image: url(images/resetpwrd.jpg); 
+     background-size: cover; 
+     background-repeat: no-repeat;
+     height: 639px;
+     width: 100%;
+ }
+ 
+ .reset{
+     margin-top: 80px;
+ }
+ 
+ .white{
+ text-decoration: none;
+ color: white;
+ margin-top: 8px;
+ 
+ }
+
+ /* Home */
+
+ .welcome_div {
+    background-image: url(images/products.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 100%;
+
+    /* fortext */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+}
+
+.welcome_cafe{
+color: navy;
+}
+
+.btn.click_here_home{
+    color: #150977;
+    background-color: #FFB32B;
+}
+
+.click_here_home:hover{
+    transform: scale(1.1);
+}
+
+.wellig{
+    font-size: 20px;
+}
+
+/* products */
+
+.ttpd{
+    background-image: url(images/cafe.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 639px;
+    width: 100%;
+    overflow-y: scroll;
+
+}
