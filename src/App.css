@@ -52,7 +52,7 @@
  
 
  .totalcontent_register{
-    background-image: url(images/register.jpg); 
+    background-image: url(/images/register.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
     height: 639px;
@@ -101,7 +101,7 @@
      display: flex !important;
      justify-content: center !important;
      align-items: center !important;
-     background-image: url(images/login.jpg); 
+     background-image: url(/images/login.jpg); 
      background-size: cover; 
      background-repeat: no-repeat;
      height: 639px;
@@ -109,7 +109,7 @@
  }
 
  ._register{
-    background-image: url(images/thunderregister.jpeg); 
+    background-image: url(/images/thunderregister.jpeg); 
     background-size: cover; 
     background-repeat: no-repeat;
     height: 639px;
@@ -140,7 +140,7 @@
      display: flex !important;
      justify-content: center !important;
      align-items: center !important;
-     background-image: url(images/forgotpassword.jpg); 
+     background-image: url(/images/forgotpassword.jpg); 
      background-size: cover; 
      background-repeat: no-repeat;
      height: 639px;
@@ -209,7 +209,7 @@ color: navy;
 /* products */
 
 .ttpd{
-    background-image: url(images/cafe.jpg); 
+    background-image: url(/images/cafe.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
     height: 639px;
