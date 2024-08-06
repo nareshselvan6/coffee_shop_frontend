@@ -153,7 +153,7 @@
      display: flex !important;
      justify-content: center !important;
      align-items: center !important;
-     background-image: url(images/resetpwrd.jpg); 
+     background-image: url(/images/resetpwrd.jpg); 
      background-size: cover; 
      background-repeat: no-repeat;
      height: 639px;
