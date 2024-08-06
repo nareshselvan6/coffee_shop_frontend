@@ -22,7 +22,7 @@ const App = () => {
             <Route path="/register" element={<RegisterPage/>} />
             <Route path= "/login" element={<LoginPage/>}/>
             <Route path= "/forgetpassword" element={<ForgetPassword/>}/>
-            <Route path= "/resetpswrd" element={<Resetpassword/>}/>
+            <Route path= "/resetpswrd/:id/:token" element={<Resetpassword/>}/>
             <Route path= "/products" element={<Products/>}/>
             <Route path="/stripaymentsuccess" element={<StripepaySuccess/>}/>
             <Route path="/stripaymentfailure" element={<StripepayFailure/>}/>
