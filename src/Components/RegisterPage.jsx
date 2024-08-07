@@ -32,18 +32,18 @@ const RegisterPage = () => {
           <div className='totalcontent_register'>
           <div className='registerpage'>
           <div className='pagetitle'>
-          <h2>Register Here!</h2>
+          <h2 className='red'>Register Here!</h2>
           </div>
           <div className='content-body'>
                 <form className='form' onSubmit={signup}>
-                  <label className='white'> UserName</label>
-                    <input type="text" placeholder='johndoe16'  onChange={(e) => setUsername(e.target.value)}/>
-                    <label className='white'>Email</label>
-                    <input type="email" placeholder='johndoe@gmail.com'  onChange={(e) => setEmail(e.target.value)}/>
-                    <label className='white'>Password</label>
-                    <input type="password" placeholder="*******" onChange={(e) => setPassword(e.target.value)}/>
+                  <label className='white red'> UserName</label>
+                    <input className='reg' type="text" placeholder='johndoe16'  onChange={(e) => setUsername(e.target.value)}/>
+                    <label className='white red'>Email</label>
+                    <input className='reg' type="email" placeholder='johndoe@gmail.com'  onChange={(e) => setEmail(e.target.value)}/>
+                    <label className='white red'>Password</label>
+                    <input className='reg' type="password" placeholder="*******" onChange={(e) => setPassword(e.target.value)}/>
                     <button type='submit' className='btn btn-primary'>Signup</button>
-                    <Link to="/login" className='white text-decoration-none' >Already Have An Account</Link>
+                    <Link to="/login" className='white text-decoration-none red' >Already Have An Account</Link>
                 </form>
             </div>
           </div>

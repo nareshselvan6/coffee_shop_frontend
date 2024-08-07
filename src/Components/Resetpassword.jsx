@@ -24,7 +24,7 @@ const Resetpassword = () => {
             .then(res=>{setRegistered(res.data)
             }).catch((error)=>console.log(error));
         
-            navigate('/')
+            navigate('/', { replace: true })
             
         } catch (error) {
             console.log("error occured while reseting password" + error);
@@ -35,9 +35,9 @@ const Resetpassword = () => {
             <div className='totalreset'>
             <div className='resetpassword'>
              <form className='form reset' onSubmit={resetpassword} >
-                <h2 className='white'>Reset Password</h2>
-                    <label className='white'>New Password</label>
-                    <input type="text" placeholder='*******' onChange={(e) => setPassword(e.target.value)}/>
+                <h2 className='white brown'>Reset Password</h2>
+                    <label className='white brown'>New Password</label>
+                    <input className='rstpswd' type="text" placeholder='*******' onChange={(e) => setPassword(e.target.value)}/>
                     <button type='submit' className='btn btn-success'>Update</button>
                    
                 </form>

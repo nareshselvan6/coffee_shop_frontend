@@ -32,17 +32,17 @@ const LoginPage = () => {
              <div className='totallogincontent'>
           <div className='Loginpage'>
           <div className='pagetitle'>
-          <h2>Login Here!</h2>
+          <h2 className='black'>Login Here!</h2>
           </div>
           <div className='content-body'>
                 <form className='form' onSubmit={login} >
-                    <label className='white'>Email</label>
-                    <input type="email" placeholder='johndoe@gmail.com' onChange={(e) => setEmail(e.target.value)}/>
-                    <label className='white'>Password</label>
-                    <input type="password" placeholder="*******"  onChange={(e) => setPassword(e.target.value)}/>
-                    <Link to="/forgetPassword" className='white'>Forgot Password?</Link>
-                    <Link to="/register" className='white' >Dont Have An Account, Register Here !</Link>
-                    <button type='submit' className='btn btn-primary'>Login</button>
+                    <label className='white black'>Email</label>
+                    <input className='log' type="email" placeholder='johndoe@gmail.com' onChange={(e) => setEmail(e.target.value)}/>
+                    <label className='white black'>Password</label>
+                    <input className='log' type="password" placeholder="*******"  onChange={(e) => setPassword(e.target.value)}/>
+                    <Link to="/forgetPassword" className='white black'>Forgot Password?</Link>
+                    <Link to="/register" className='white black' >Dont Have An Account, Register Here !</Link>
+                    <button type='submit' className='btn btn-primary '>Login</button>
                    
                 </form>
             </div>

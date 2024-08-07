@@ -28,9 +28,10 @@ const ForgetPassword = () => {
       <div className="totalforgotpassword">
         <div className="forgotpassword">
           <form className="form forget" onSubmit={forgotpassword}>
-            <h2 className="white">Forget Password</h2>
-            <label className="white">Email</label>
+            <h2 className="white green">Forget Password</h2>
+            <label className="white green">Email</label>
             <input
+            className="forpswd"
               type="email"
               placeholder="johndoe@gmail.com"
               onChange={(e) => setEmail(e.target.value)}

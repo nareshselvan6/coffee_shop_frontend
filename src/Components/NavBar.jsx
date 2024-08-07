@@ -18,7 +18,7 @@ const NavBar = ({ cartQuantity }) => {
   const navigate = useNavigate();
 
   const logout= ()=>{
-    navigate("/")
+    navigate("/", { replace: true })
 
   }
 
@@ -97,7 +97,7 @@ useEffect(() => {
             </ul>
             <form className="d-flex">
               <button
-                className="btn btn-outline-dark"
+                className="btn btn-outline-dark cart"
                 type="button"
                 onClick={selecteditems}
               >

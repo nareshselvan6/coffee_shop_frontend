@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import Header from './Header';
 import Footer from './Footer';
+import prodimg from "../../images/productimg.jpg"
 
 const Products = ( ) => {
 
@@ -30,7 +31,7 @@ const Products = ( ) => {
     return (
         <>
           <NavBar cartQuantity={cartQuantity} /> 
-          <Header/>
+          {/* <Header/> */}
           <div className='ttpd'>
             <div className=" totalcontent_products container px-4 px-lg-5 mt-0">
                 <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -39,7 +40,7 @@ const Products = ( ) => {
                               <div className="col mb-5" key={element._id}>
                         <div className="card h-100 mt-4 mb-4 ">
                             
-                        <img className="card-img-top" src="https://www.shutterstock.com/image-vector/rice-dish-deep-bowl-herbs-600nw-2277508955.jpg" alt="FriedRice" />
+                        <img className="card-img-top" src={prodimg} alt="FriedRice" />
                            
                             <div className="card-body p-4">
                                 <div className="text-center">

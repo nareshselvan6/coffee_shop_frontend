@@ -26,6 +26,16 @@
     justify-content: space-between;
 }
 
+/* header */
+
+.header{
+    /* background: rgb(110,103,99);
+    background: linear-gradient(90deg, rgba(110,103,99,1) 0%, rgba(222,131,75,1) 50%, rgba(110,103,99,1) 100%);; */
+    background-color: #7c6a60;
+background-image: linear-gradient(43deg, #7c6a60 0%, #de834c 46%, #FFCC70 100%);
+
+}
+
 
 /* auth */
 
@@ -107,6 +117,22 @@
      height: 639px;
      width: 100%;
  }
+
+ /* logout */
+ .logout:hover {
+    background-color: red;
+ }
+
+ /* Navbar */
+.cart:hover{
+    background-color: #3D9168;
+    border: none;
+
+}
+
+
+
+/* register */
 
  ._register{
     background-image: url(/images/thunderregister.jpeg); 
@@ -215,5 +241,165 @@ color: navy;
     height: 639px;
     width: 100%;
     overflow-y: scroll;
+
+}
+
+/* responsiveness */
+
+/* login */
+@media screen and (max-width: 650px) {
+    .Loginpage{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important; 
+        align-self: center !important;
+    }
+
+    .log{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .Loginpage{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 200px;
+        height: 450px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important; 
+        align-self: center !important;
+    }
+
+    .log{
+        width: 150px;
+    }
+    
+    .black{
+        color: black;
+    }
+    
+}
+
+/* register */
+
+@media screen and (max-width: 650px) {
+
+
+    .registerpage{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important; 
+        align-self: center !important;
+     }
+
+     .reg{
+        width: 200px;
+     }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .registerpage{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 200px;
+        height: 450px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important; 
+        align-self: center !important;
+     }
+
+     .reg{
+        width: 150px;
+     }
+
+     .red{
+        color: #D6576C;
+     }
+
+}
+
+/* forgot password */
+
+@media screen and (max-width: 650px) {
+
+    .forgotpassword{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+    }
+
+    .forpswd{
+        width: 200px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .forgotpassword{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 200px;
+        height: 450px;
+    }
+
+    .forpswd{
+        width: 150px;
+    }
+
+    .green{
+        color: #3D9168;
+    }
+
+}
+
+/* reset password */
+
+@media screen and (max-width: 650px) {
+    .resetpassword{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+    }
+
+    .rstpswd{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .resetpassword{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 200px;
+        height: 450px;
+    }
+
+    .rstpswd{
+        width: 150px;
+    }
+
+    .brown{
+        color: #a26026;
+    }
 
 }
