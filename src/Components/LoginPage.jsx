@@ -30,18 +30,18 @@ const LoginPage = () => {
     return (
         <div>
              <div className='totallogincontent'>
-          <div className='Loginpage'>
+          <div className='Loginpage blurred-div'>
           <div className='pagetitle'>
           <h2 className='black'>Login Here!</h2>
           </div>
           <div className='content-body'>
                 <form className='form' onSubmit={login} >
-                    <label className='white black'>Email</label>
+                    <label className=' black'>Email</label>
                     <input className='log' type="email" placeholder='johndoe@gmail.com' onChange={(e) => setEmail(e.target.value)}/>
-                    <label className='white black'>Password</label>
+                    <label className=' black'>Password</label>
                     <input className='log' type="password" placeholder="*******"  onChange={(e) => setPassword(e.target.value)}/>
-                    <Link to="/forgetPassword" className='white black'>Forgot Password?</Link>
-                    <Link to="/register" className='white black' >Dont Have An Account, Register Here !</Link>
+                    <Link to="/forgetPassword" className=' black'>Forgot Password?</Link>
+                    <Link to="/register" className=' black' >Dont Have An Account, Register Here !</Link>
                     <button type='submit' className='btn btn-primary '>Login</button>
                    
                 </form>

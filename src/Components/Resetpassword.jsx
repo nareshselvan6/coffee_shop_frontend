@@ -33,10 +33,10 @@ const Resetpassword = () => {
     return (
         <div>
             <div className='totalreset'>
-            <div className='resetpassword'>
+            <div className='resetpassword blurred-div'>
              <form className='form reset' onSubmit={resetpassword} >
-                <h2 className='white brown'>Reset Password</h2>
-                    <label className='white brown'>New Password</label>
+                <h2 className='black brown'>Reset Password</h2>
+                    <label className='black brown'>New Password</label>
                     <input className='rstpswd' type="text" placeholder='*******' onChange={(e) => setPassword(e.target.value)}/>
                     <button type='submit' className='btn btn-success'>Update</button>
                    

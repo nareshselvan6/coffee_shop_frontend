@@ -26,10 +26,10 @@ const ForgetPassword = () => {
   return (
     <div>
       <div className="totalforgotpassword">
-        <div className="forgotpassword">
+        <div className="forgotpassword blurred-div">
           <form className="form forget" onSubmit={forgotpassword}>
-            <h2 className="white green">Forget Password</h2>
-            <label className="white green">Email</label>
+            <h2 className="black green">Forget Password</h2>
+            <label className="black green">Email</label>
             <input
             className="forpswd"
               type="email"

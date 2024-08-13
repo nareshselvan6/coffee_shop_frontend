@@ -30,20 +30,20 @@ const RegisterPage = () => {
     return (
         <div>
           <div className='totalcontent_register'>
-          <div className='registerpage'>
+          <div className='registerpage blurred-div'>
           <div className='pagetitle'>
-          <h2 className='red'>Register Here!</h2>
+          <h2 className=' black red'>Register Here!</h2>
           </div>
           <div className='content-body'>
                 <form className='form' onSubmit={signup}>
-                  <label className='white red'> UserName</label>
+                  <label className='black red'> UserName</label>
                     <input className='reg' type="text" placeholder='johndoe16'  onChange={(e) => setUsername(e.target.value)}/>
-                    <label className='white red'>Email</label>
+                    <label className='black red'>Email</label>
                     <input className='reg' type="email" placeholder='johndoe@gmail.com'  onChange={(e) => setEmail(e.target.value)}/>
-                    <label className='white red'>Password</label>
+                    <label className='black red'>Password</label>
                     <input className='reg' type="password" placeholder="*******" onChange={(e) => setPassword(e.target.value)}/>
                     <button type='submit' className='btn btn-primary'>Signup</button>
-                    <Link to="/login" className='white text-decoration-none red' >Already Have An Account</Link>
+                    <Link to="/login" className='black text-decoration-none red' >Already Have An Account</Link>
                 </form>
             </div>
           </div>
