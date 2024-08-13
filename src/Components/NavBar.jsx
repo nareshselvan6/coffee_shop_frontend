@@ -41,7 +41,7 @@ const makePayment = async () => {
     );
 
     const { data: session } = await axios.post(
-      "http://localhost:5000/payment/stripepayment",
+      "https://coffeeshop-ekfv.onrender.com/payment/stripepayment",
       { totalqty }
     );
 
