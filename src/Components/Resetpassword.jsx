@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../App.css";import { useNavigate, useParams } from 'react-router';
 import axios from 'axios';
+import { ToastContainer } from 'react-toastify';
 
 
 const Resetpassword = () => {
@@ -23,11 +24,18 @@ const Resetpassword = () => {
             await axios.put(response,payload)
             .then(res=>{setRegistered(res.data)
             }).catch((error)=>console.log(error));
+            
+            toast.success("Password reset Successfull")
+
+            setTimeout(() => {
+                
+                navigate('/', { replace: true })
+            }, 1000);
         
-            navigate('/', { replace: true })
             
         } catch (error) {
             console.log("error occured while reseting password" + error);
+            toast.error('reset failed. Please try again.');
         }
     }
     return (
@@ -41,6 +49,7 @@ const Resetpassword = () => {
                     <button type='submit' className='btn btn-success'>Update</button>
                    
                 </form>
+                <ToastContainer/>
                 </div>
                 </div>
         </div>

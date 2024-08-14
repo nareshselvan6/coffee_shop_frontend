@@ -3,6 +3,8 @@ import "../App.css";
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
@@ -18,9 +20,14 @@ const RegisterPage = () => {
     try {
       await axios.post("https://coffee-shop-backend-ex3n.onrender.com/auth/register",payload)
       .then(res=>{setRegistered(res.data)}).catch((error)=>console.log(error))
-  navigate('/login')
+      toast.success('Registration successful!');
+      setTimeout(()=>{
+
+        navigate('/login')
+      },1000);
     } catch (error) {
       console.error(error);
+      toast.error('Registration failed. Please try again.');
     }
 
       
@@ -45,6 +52,7 @@ const RegisterPage = () => {
                     <button type='submit' className='btn btn-primary'>Signup</button>
                     <Link to="/login" className='black text-decoration-none red' >Already Have An Account</Link>
                 </form>
+                <ToastContainer />
             </div>
           </div>
           </div>

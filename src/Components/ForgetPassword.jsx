@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import { useNavigate } from "react-router";
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState();
@@ -16,11 +17,16 @@ const ForgetPassword = () => {
         .put("https://coffee-shop-backend-ex3n.onrender.com/auth/forgetpassword", payload)
         .then((res) => {
           setRegistered(res.data);
-          navigate("/login");
+          toast.success("check your mail")
+          setTimeout(() => {
+            
+            navigate("/login");
+          }, 1000);
         })
         .catch((error) => console.log(error));
     } catch (error) {
       console.log("error occured while clicking forget password" + error);
+      toast.error("error")
     }
   };
   return (
@@ -40,6 +46,7 @@ const ForgetPassword = () => {
               sent
             </button>
           </form>
+          <ToastContainer/>
         </div>
       </div>
     </div>
